@@ -7,18 +7,10 @@ public class Sorter {
         System.out.println();
     }
     public void mergeSort(int[] arr){
+        printArray("whole", arr);
         int size = arr.length;
         int mid = size/2;
-        int[] l = new int[mid];
-        int[] r = new int[size-mid];
-        for(int i=0;i<mid;i++){
-            l[i] = arr[i];
-        }
-        for(int i=mid;i<size;i++){
-            r[i - mid] = arr[i];
-        }
-        // diagnostic for splitting arrays:
-        printArray("left", l); //debug
-        printArray("right", r); //debug
+        // Assignment: Write a function that divides arr into two parts and use the printArray function
+        // to print each of them out
     }
 }
