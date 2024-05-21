@@ -15,7 +15,7 @@ public class Sorter {
             l[i] = arr[i];
         }
         for(int i=mid;i<size;i++){
-            l[i - mid] = arr[i];
+            r[i - mid] = arr[i];
         }
         // diagnostic for splitting arrays:
         printArray("left", l); //debug
